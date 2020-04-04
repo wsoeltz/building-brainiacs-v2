@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Building Brainiacs`,
+    description: `Every child deserves the gift of reading. Our reading specialists turn the sentiment into a reality.`,
+    author: `Kyle Soeltz`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,4 +31,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+  pathPrefix: "/building-brainiacs-v2",
 }
