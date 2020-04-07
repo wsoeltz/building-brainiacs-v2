@@ -1,7 +1,13 @@
 import React from 'react';
 
 const ContactForm = () => {
-  const pathname = window && window.location ? window.location.pathname : '';
+  let pathname;
+  try {
+    pathname = window && window.location ? window.location.pathname : '';
+  } catch(e) {
+    console.error(e);
+    pathname = '';
+  }
   const contactPagePara = pathname.includes('contact') ? (
     <p>We know that finding the right tutor for your child can be a daunting task. We are here to help.</p>
   ) : null;
