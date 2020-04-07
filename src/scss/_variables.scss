@@ -1,0 +1,32 @@
+// Break Points
+$break-mobileExtraSmall: 350px;
+$break-mobileSmall: 500px;
+$break-mobileMedium: 600px;
+$break-tabletSmall: 767px;
+$break-tabletMedium: 900px;
+$break-desktopSmall: 1025px;
+$break-desktopMedium: 1300px;
+$break-desktopLarge: 1400px;
+
+$font-main: 'Open Sans', 'Myriad Pro', Myriad, Helvetica, Arial, sans-serif;
+
+$color-primary: #093343;
+$color-secondary: #1475a0;
+
+$color-dark: #0a3345;
+$color-gray: #8c9092;
+$color-ltGray: #f5f6f6;
+$color-white: #ffffff;
+
+$color-strokeGray: #e1e1e1;
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
