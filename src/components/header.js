@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ children, extraClass }) => {
-  const {pathname} = window.location;
+  const pathname = window && window.location ? window.location.pathname : '';
   const headerClass = extraClass ? 'header ' + extraClass : 'header';
 
   const isCurrentPage = (page) => pathname.includes(page)  ? 'active' : undefined;
