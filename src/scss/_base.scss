@@ -87,7 +87,7 @@ ul {
 	}
 }
 
-a.btn {
+.btn {
 	font-size: 16px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -105,6 +105,7 @@ a.btn {
 	&:hover {
 		color: $color-white;
 		background-color: $color-secondary;
+		cursor: pointer;
 	}
 }
 

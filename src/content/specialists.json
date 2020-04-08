@@ -1,0 +1,149 @@
+{
+  "title": "specialists-data",
+  "data": [
+    {
+      "name": "David D.",
+      "type": "Math Specialist",
+      "school": "Hunter College​",
+      "image": "david-b.png"
+    },
+    {
+      "name": "Bill K.",
+      "type": "Literacy Specialist",
+      "school": "NYU",
+      "image": "bill-k.png"
+    },
+    {
+      "name": "Samantha M.",
+      "type": "Literacy Specialist",
+      "school": "NYU",
+      "image": "samantha-m.png"
+    },
+    {
+      "name": "Katrina T.",
+      "type": "Literacy Specialist",
+      "school": "NYU",
+      "image": "katrina-t.png"
+    },
+    {
+      "name": "Laura C.",
+      "type": "Literacy and Math Specialist",
+      "school": "University of Alabama",
+      "image": "laura-c.png"
+    },
+    {
+      "name": "Don L.",
+      "type": "Writing Specialist",
+      "school": "Western Connecticut U.",
+      "image": "don-l.png"
+    },
+    {
+      "name": "Ivan R.",
+      "type": "Writing Specialist",
+      "school": "NYU",
+      "image": "ivan-r.png"
+    },
+    {
+      "name": "Jenna E.",
+      "type": "Literacy Specialist",
+      "school": "St. Joseph's",
+      "image": "jenna-e.png"
+    },
+    {
+      "name": "Alyssa N.",
+      "type": "Literacy Specialist",
+      "school": "NYU",
+      "image": "alyssa-n.png"
+    },
+    {
+      "name": "Nandita B.",
+      "type": "Literacy Specialist",
+      "school": "Williams College",
+      "image": "nandita-b.png"
+    },
+    {
+      "name": "Sierra S.",
+      "type": "Literacy Specialist",
+      "school": "Columbia University",
+      "image": "sierra-s.png"
+    },
+    {
+      "name": "Lizzie S.",
+      "type": "Literacy Specialist",
+      "school": "Northeastern University",
+      "image": "lizzie-s.png"
+    },
+    {
+      "name": "Alison K.",
+      "type": "Literacy Specialist",
+      "school": "Bloomsburg University",
+      "image": "alison-k.png"
+    },
+    {
+      "name": "Ashley H.",
+      "type": "Literacy Specialist",
+      "school": "Columbia University",
+      "image": "ashley-h.png"
+    },
+    {
+      "name": "Anna D.",
+      "type": "Literacy Specialist",
+      "school": "Hunter College",
+      "image": "anna-d.png"
+    },
+    {
+      "name": "Alison T.",
+      "type": "Literacy Specialist",
+      "school": "Brooklyn College",
+      "image": "alison-t.png"
+    },
+    {
+      "name": "Paula S.",
+      "type": "Literacy Specialist",
+      "school": "NYU",
+      "image": "paula-s.png"
+    },
+    {
+      "name": "Claire G.",
+      "type": "Literacy Specialist",
+      "school": "Manhattan College",
+      "image": "claire-g.png"
+    },
+    {
+      "name": "Evan O.",
+      "type": "Literacy Specialist",
+      "school": "Louisiana State University",
+      "image": "evan-o.png"
+    },
+    {
+      "name": "Meghan M.",
+      "type": "Literacy Specialist",
+      "school": "SUNY College of Old Westbury",
+      "image": "meghan-m.png"
+    },
+    {
+      "name": "Louise D",
+      "type": "Literacy Specialist",
+      "school": "Columbia University",
+      "image": "louise-d.png"
+    },
+    {
+      "name": "Kayleigh S",
+      "type": "Literacy Specialist",
+      "school": "NYU",
+      "image": "kayleigh-s.png"
+    },
+    {
+      "name": "Michael M",
+      "type": "Literacy Specialist",
+      "school": "Pace University",
+      "image": "michael-m.png"
+    },
+    {
+      "name": "Julie B",
+      "type": "Literacy Specialist",
+      "school": "George Washington University",
+      "image": "julie-b.png"
+    }
+  ]
+}
