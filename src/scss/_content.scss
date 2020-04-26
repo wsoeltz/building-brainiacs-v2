@@ -342,6 +342,16 @@ article.body.contact {
   }
 }
 
+form#contactform input.mousetrap {
+	opacity: 0;
+	height: 0;
+	width: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+}
+
 
 ////////////////////////
 //

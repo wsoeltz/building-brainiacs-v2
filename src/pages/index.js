@@ -14,6 +14,7 @@ import SpecialistsKatrinaT from '../images/homepage/specialists/katrinat.png'
 import SpecialistsDonL from '../images/homepage/specialists/donl.png'
 import SpecialistsIvanR from '../images/homepage/specialists/ivanr.png'
 import SpecialistsSierraS from '../images/homepage/specialists/sierras.png'
+import PaulTryonProfile from '../images/homepage/paul-tryon-profile.png'
 
 const IndexPage = () => (
   <>
@@ -87,7 +88,21 @@ const IndexPage = () => (
     </section>
 
     <section className="contact-row">
-      <ContactForm />
+      <div className="row">
+        <h3>Schedule a free phone consultation with our&nbsp;founder, Paul&nbsp;Tryon</h3>
+        <div className="row relative-parent">
+          <div className="paul-photo-full">
+            <img
+              src={PaulTryonProfile}
+              alt="Photo of Paul Tryon"
+              title="Paul Tryon, Literary Tutoring Specialist"
+            />
+          </div>
+          <div className="form">
+            <ContactForm />
+          </div>
+        </div>
+      </div>
     </section>
     </Content>
     <Footer />

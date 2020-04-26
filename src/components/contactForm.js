@@ -1,6 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const ContactForm = () => {
+  const [mousetrapValue, setMousetrapValue] = useState('');
+  console.log(mousetrapValue);
+  if (mousetrapValue && mousetrapValue.length) {
+    return null;
+  }
   let pathname;
   try {
     pathname = window && window.location ? window.location.pathname : '';
@@ -33,6 +38,13 @@ const ContactForm = () => {
       <form id="contactform" name="contactform" action="https://getform.io/f/33e7a0e2-a111-4445-8535-be71b4deba48" method="POST">
         <div className="row">
           <div className="column half">
+            <input
+              type="text"
+              name={"website"}
+              className="mousetrap"
+              value={mousetrapValue}
+              onChange={e => setMousetrapValue(e.target.value)}
+            />
             <label htmlFor={"name"}>Name</label>
             <input type="text" name={"name"} id="first_name" required />
             <label htmlFor={"email"}>Email</label>
