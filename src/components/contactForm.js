@@ -30,16 +30,15 @@ const ContactForm = () => {
         </div>
       </div>
 
-
-      <form id="contactform" name="contactform" method="post" action="send_form_email.php">
+      <form id="contactform" name="contactform" action="https://getform.io/f/33e7a0e2-a111-4445-8535-be71b4deba48" method="POST">
         <div className="row">
           <div className="column half">
-            <label htmlFor="first_name">Name</label>
-            <input  type="text" name="first_name" id="first_name" required />
-            <label htmlFor="email">Email</label>
-            <input  type="email" name="email" id="email" required />
-            <label htmlFor="phone">Phone</label>
-            <input  type="text" name="phone" id="phone" required />
+            <label htmlFor={"name"}>Name</label>
+            <input type="text" name={"name"} id="first_name" required />
+            <label htmlFor={"email"}>Email</label>
+            <input type="email" name={"email"} id="email" required />
+            <label htmlFor={"tel"}>Phone</label>
+            <input type="text" name={"tel"} id="tel" required />
           </div>
           <div className="column half">
             <label htmlFor="comments">Message</label>

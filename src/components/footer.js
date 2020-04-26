@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 
 const Footer = () => {
+  console.log(process.env.SECRET_TEST)
   const year = new Date().getFullYear();
   return (
     <footer className="footer">
@@ -17,6 +18,7 @@ const Footer = () => {
         Serving Boston, New York City, Westchester, and Long Island
         <br /><a href="tel:(917) 819-2468">(917) 819-2468</a>
         <br /><a href="mailto:buildingbrainiacs@gmail.com">buildingbrainiacs@gmail.com</a>
+        {process.env.SECRET_TEST}
       </address>
     </footer>
   );
