@@ -8,7 +8,7 @@ The content of this site is copyright © 2020 Building Brainiacs LLC. All rights
 
 The code for this site is licensed under [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-## Updating Content
+# Updating Content
 
   - [Overview](#overview)
   - [Editing a JSON File](#editingajsonfile)
@@ -19,7 +19,7 @@ The code for this site is licensed under [Attribution-NonCommercial-ShareAlike 4
 
 <a name="overview"/>
 
-### **Overview**
+## Overview
 
 All of the _text content_ for the site can be found in [`src/content`](src/content). Each file is named according to the page that is associated with it, i.e. `specialists.json` contains all of the copy found on the **Specialists** page. Additionally, there is a file called `general.json` that includes the text for the navigation and the footer.
 
@@ -27,7 +27,7 @@ The text is stored in **JSON** format, which is a fast and simple data format th
 
 <a name="editingajsonfile"/>
 
-### **Editing a JSON File**
+## Editing a JSON File
 
 A JSON file contains a number of _keys_, each with their own _values_, separated by commas.
 
@@ -66,15 +66,17 @@ This will now create a new build of the site with the changes. One of the best p
 
 <a name="metadata"/>
 
-### **metaTitle and metaDescription**
+## metaTitle and metaDescription
 
 In each JSON file, you will see two fields at the top `metaTitle` and `metaDescription`.
 
 These are the fields the control what shows up on search results, social media shares, and in the browser tab for your site.
 
+For some information on writing effective meta descriptions, check out this article [here](https://moz.com/learn/seo/meta-description).
+
 <a name="htmlinjson"/>
 
-### **HTML in the JSON**
+## **HTML in the JSON**
 
 In a handful of instances, you will see a `key` that is called `htmlContent` or includes `__HTML` at the end. These indicate that the text will be rendered as HTML on the page, which means it can accept any HTML tag to allow for more complex layouts than simple text would allow. When writing an HTML tag, the start must look something like this - `<p>` and end like this - `</p>`. All of the content should sit within those two tags.
 
@@ -90,7 +92,7 @@ For the purpose of this site, the only tags you may need are the following:
 
 <a name="updatingspecialists"/>
 
-### **Updating Specialists**
+## **Updating Specialists**
 
 The first step to adding a specialist is to add their picture. The pictures for all of the specialists should go in [`src/images/specialists/`](src/images/specialists). From there, in the top right just above the list of files, you'll see a button that says "Upload files". Click this and you can upload an image to the directory.
 
@@ -129,7 +131,7 @@ You can also reorder and delete specialists, just make sure to follow the format
 
 <a name="updatingtestimonials"/>
 
-### **Updating Testimonials**
+## **Updating Testimonials**
 
 Updating testimonials follows a similar approach as [Updating Specialists](#updatingspecialists). Navigate to [`src/content/testimonials.json`](src/content/testimonials.json) to edit the testimonials content file.
 
