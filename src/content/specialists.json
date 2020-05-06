@@ -159,5 +159,14 @@
       "school": "Graduate of George Washington University",
       "image": "julie-b.png"
     }
+  ],
+  "managers": [
+    {
+      "name": "Michelle Russo",
+      "title": "Boston Manager",
+      "school": "Graduate of Union College",
+      "image": "michelle-russo.jpg",
+      "htmlContent": "<p>Michelle Russo believes all students can learn; they just need the right teacher. Michelle currently leads the Building Brainiacs Boston team.</p><p>Prior to Michelle's work with Building Brainiacs, Michelle worked as an academic dean, instructional coach, curriculum consultant, and taught and developed curriculum for elementary schools in Brooklyn. Michelle was recognized as a Distinguished Teacher within the Achievement First Charter network for the dramatic academic gains her students made in reading and math, as well as high ratings on both peer and family surveys.  Implementing best research based practices, building relationships, leveraging student's strengths, and prioritizing areas of growth are tenets to Michelle's success. Michelle's work at Achievement First Apollo contributed to the school's Reward School status for dramatic academic gains. Michelle also led a team of reading specialists across South Bronx Classical Schools and developed literacy curriculum for Ascend Charter School's literacy program.</p><p>In addition to working with Building Brainiacs, Michelle is currently working as a Dean of Curriculum and Instruction at a school in Boston. Michelle is a Summa Cum Laude graduate of Union College, with honors in psychology and economics, and holds an MS in Education.</p>"
+    }
   ]
 }

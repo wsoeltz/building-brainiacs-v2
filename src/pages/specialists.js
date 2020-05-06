@@ -1,15 +1,12 @@
-import React, {useState} from "react"
+import React from "react"
 import Content from "../components/content"
 import MetaData from "../components/metadata"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import JSONData from "../content/specialists.json";
-import {SlideDown} from 'react-slidedown'
-import 'react-slidedown/lib/slidedown.css'
 
 const SpecialistsPage = () => {
   const {data} = JSONData;
-  const [moreInfoOpen, setMoreInfoOpen] = useState(false);
   const specialists = data.map(({name, type, school, image}) => {
     return (
       <div className="specialist-avatar matchHeight" key={name + type + school + image}>
@@ -20,20 +17,6 @@ const SpecialistsPage = () => {
       </div>
     );
   });
-
-  const moreInfo = moreInfoOpen ? (
-    <div id="aboutPaulTryon" >
-      <div className="row">
-        <div
-          className="content-column right"
-          dangerouslySetInnerHTML={{__html: JSONData.founderLearnMore__HTML}}
-        />
-      </div>
-    </div>
-  ) : null;
-
-  const chevron = moreInfoOpen ? 'fa-chevron-up' : 'fa-chevron-down';
-
   return (
     <>
       <MetaData title={JSONData.metaTitle}  description={JSONData.metaDescription} />
@@ -51,32 +34,43 @@ const SpecialistsPage = () => {
             {specialists}
           </div>
         </section>
-        <section className="specialists-meet-paul">
-          <div className="row paul-tryon-founder">
+        <section className="specialists-managers">
+          <h1>Leadership &amp; Managment</h1>
+          <div className="manager-row">
+            <div className="image image-small">
+              <img
+                src={require("../images/managers/michelle-russo.jpg")}
+                alt={JSONData.managers[0].name}
+                title={JSONData.managers[0].name}
+              />
+              <div className="text">
+                <h5>{JSONData.managers[0].name}</h5>
+                <h6>{JSONData.managers[0].title}</h6>
+                <h6>{JSONData.managers[0].school}</h6>
+              </div>
+            </div>
+            <div className="content"
+              dangerouslySetInnerHTML={{__html: JSONData.managers[0].htmlContent}}
+            />
+          </div>
+        </section>
+        <section className="specialists-managers founder">
+          <div className="manager-row">
             <div className="image">
               <img
                 src={require("../images/homepage/paul-tryon-profile.png")}
                 alt="Paul Tryon"
                 title="Paul Tryon, Literary Tutoring Specialist"
               />
+              <div className="text">
+                <h5>{JSONData.founderName}</h5>
+                <h6>{JSONData.founderTitle}</h6>
+                <h6>{JSONData.founderSchool}</h6>
+              </div>
             </div>
-            <div className="text">
-              <h5>{JSONData.founderName}</h5>
-              <h6>{JSONData.founderTitle}</h6>
-              <h6>{JSONData.founderSchool}</h6>
-            </div>
-          </div>
-          <div className="more-information-toggle">
-            <div className="row">
-              <h3 id="clickForPaulTryon">
-                <button onClick={() => setMoreInfoOpen(!moreInfoOpen)}>
-                  {JSONData.founderLearnMoreLink} <i className={`fa ${chevron}`} aria-hidden="true"></i>
-                </button>
-              </h3>
-            </div>
-            <SlideDown>
-              {moreInfo}
-            </SlideDown>
+            <div className="content"
+              dangerouslySetInnerHTML={{__html: JSONData.founderLearnMore__HTML}}
+            />
           </div>
         </section>
       </Content>
