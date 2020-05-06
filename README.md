@@ -21,7 +21,7 @@ The code for this site is licensed under [Attribution-NonCommercial-ShareAlike 4
 
 ### **Overview**
 
-All of the _text content_ for the site can be found in [`src/content`](/tree/master/src/content). Each file is named according to the page that is associated with it, i.e. `specialists.json` contains all of the copy found on the **Specialists** page. Additionally, there is a file called `general.json` that includes the text for the navigation and the footer.
+All of the _text content_ for the site can be found in [`src/content`](src/content). Each file is named according to the page that is associated with it, i.e. `specialists.json` contains all of the copy found on the **Specialists** page. Additionally, there is a file called `general.json` that includes the text for the navigation and the footer.
 
 The text is stored in **JSON** format, which is a fast and simple data format that makes developing the site easy and updating the content straightforward once you understand the basics of how to format a JSON file.
 
@@ -57,7 +57,7 @@ Generally speaking for the site, you should not have to worry about most of that
 
 To update a file:
 
-1. first go to [`src/content`](/tree/master/src/content) and the click on the one you would like to update.
+1. first go to [`src/content`](src/content) and the click on the one you would like to update.
 1. In the right hand corner of the file, you should see a pencil icon (next to a computer icon and a trash icon). Click this and you will be in edit mode.
 1. Go ahead and make your changes, making sure to follow the above guidelines.
 1. Once you are done, scroll down and click **Commit Changes** (Keep any options you see as-is)
@@ -92,11 +92,11 @@ For the purpose of this site, the only tags you may need are the following:
 
 ### **Updating Specialists**
 
-The first step to adding a specialist is to add their picture. The pictures for all of the specialists should go in [`src/images/specialists/`](/tree/master/src/images/specialists). From there, in the top right just above the list of files, you'll see a button that says "Upload files". Click this and you can upload an image to the directory.
+The first step to adding a specialist is to add their picture. The pictures for all of the specialists should go in [`src/images/specialists/`](src/images/specialists). From there, in the top right just above the list of files, you'll see a button that says "Upload files". Click this and you can upload an image to the directory.
 
 The image must be a square **240 pixels by 240 pixels**. If you don't have any software to perform the crop, there are number of online free image croppers that can be found with a quick Google Search. The image does not have to be a circle, so long as it is a square the code will automatically put it into a circle.
 
-Once the image is updated, navigate to [`src/content/specialists.json`](/blob/master/src/content/specialists.json) and hit *edit*. In this JSON file, you will find a `key` called `data`. Unlike the other JSON values already talked about, `data` is a list of JSON values and it looks like this:
+Once the image is updated, navigate to [`src/content/specialists.json`](src/content/specialists.json) and hit *edit*. In this JSON file, you will find a `key` called `data`. Unlike the other JSON values already talked about, `data` is a list of JSON values and it looks like this:
 
 ```js
 {
@@ -123,7 +123,7 @@ The important things to note about the formatting of this list are:
 - Each group of `key/value` pairs is contained within it's own squiggly brackets `{}`
 - Just like how every `key/value` MUST end with a comma EXCEPT for the last one, every group of `key/values` MUST end with a comma EXCEPT for the last one
 
-To add a new specialist, create a new grouping after the last one in the list, making sure to put commas in the right spots and follow the formatting guidelines above and found in the [Editing a JSON File](#editingajsonfile) section. The "image" value should be whatever the image name (including the .png/.jpg/.gif extension) is of the one you uploaded to [`src/images/specialists/`](/tree/master/src/images/specialists).
+To add a new specialist, create a new grouping after the last one in the list, making sure to put commas in the right spots and follow the formatting guidelines above and found in the [Editing a JSON File](#editingajsonfile) section. The "image" value should be whatever the image name (including the .png/.jpg/.gif extension) is of the one you uploaded to [`src/images/specialists/`](src/images/specialists).
 
 You can also reorder and delete specialists, just make sure to follow the formatting guidelines.
 
@@ -131,7 +131,7 @@ You can also reorder and delete specialists, just make sure to follow the format
 
 ### **Updating Testimonials**
 
-Updating testimonials follows a similar approach as [Updating Specialists](#updatingspecialists). Navigate to [`src/content/testimonials.json`](/blob/master/src/content/testimonials.json) to edit the testimonials content file.
+Updating testimonials follows a similar approach as [Updating Specialists](#updatingspecialists). Navigate to [`src/content/testimonials.json`](src/content/testimonials.json) to edit the testimonials content file.
 
 From there, you will see a similar structure of the key "data" relating to a list of values. As you add/edit/remove testimonials, make sure to follow the guidelines in [Editing a JSON File](#editingajsonfile) and the additional guidelines mentioned in [Updating Specialists](#updatingspecialists).
 
