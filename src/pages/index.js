@@ -95,7 +95,7 @@ const IndexPage = () => (
           <div className="paul-photo-full">
             <img
               src={PaulTryonProfile}
-              alt="Photo of Paul Tryon"
+              alt="Paul Tryon"
               title="Paul Tryon, Literary Tutoring Specialist"
             />
           </div>
