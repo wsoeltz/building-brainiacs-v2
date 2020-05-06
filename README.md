@@ -72,7 +72,7 @@ In each JSON file, you will see two fields at the top `metaTitle` and `metaDescr
 
 These are the fields the control what shows up on search results, social media shares, and in the browser tab for your site.
 
-<a name="#htmlinjson"/>
+<a name="htmlinjson"/>
 
 ### HTML in the JSON
 
@@ -88,7 +88,7 @@ For the purpose of this site, the only tags you may need are the following:
 
 **An important note about writing HTML in JSON:** When writing HTML in JSON (or any text for that matter), you must not break the text onto more than one line. The text can naturally wrap to additional lines (when editing, you can set the option to wrap the text in the upper right of the edit field for easier reading), but do not hit _return_/_enter_ to manually break onto a new line. This is invalid JSON and will throw an error.
 
-<a name="#updatingspecialists"/>
+<a name="updatingspecialists"/>
 
 ### Updating Specialists
 
@@ -127,7 +127,7 @@ To add a new specialist, create a new grouping after the last one in the list, m
 
 You can also reorder and delete specialists, just make sure to follow the formatting guidelines.
 
-<a name="#updatingtestimonials"/>
+<a name="updatingtestimonials"/>
 
 ### Updating Testimonials
 
