@@ -15,7 +15,7 @@ const ServicesPage = () => (
         <div className="row">
           <h1>{JSONData.title}</h1>
           <h2>{JSONData.subtitle}</h2>
-          <ul>{JSONData.list.map(item => <li>{item}</li>)}</ul>
+          <ul>{JSONData.list.map(item => <li key={item}>{item}</li>)}</ul>
         </div>
       </section>
       <section className="services-content">

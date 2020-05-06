@@ -17,7 +17,8 @@ const Footer = () => {
       <address>
         {JSONData.footerLocations}
         <br /><a href="tel:(917) 819-2468">(917) 819-2468</a>
-        <br /><a href="mailto:buildingbrainiacs@gmail.com">buildingbrainiacs@gmail.com</a>
+        <br />
+        <a href="mailto:paul@buildingbrainiacs.com">paul@buildingbrainiacs.com</a>
       </address>
     </footer>
   );

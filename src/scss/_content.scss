@@ -134,21 +134,18 @@
 		left: 0;
 		bottom: 0;
 		top: 0;
-		width: 25%;
-		@media (max-width: 800px) {
+		width: 20%;
+		@media (max-width: 900px) {
 			display: none;
 		}
 		img {
-			position: absolute;
-	    margin: auto;
-	    bottom: 0;
-	    top: 0;
+			margin-bottom: 1rem;
 		}
 	}
 	.form {
 		position: relative;
-		padding-left: 27%;
-		@media (max-width: 800px) {
+		padding-left: 25%;
+		@media (max-width: 900px) {
 			padding-left: 0;
 		}
 	}
@@ -189,6 +186,18 @@ a.contact-link {
 			display: none;
 		}
 	}
+}
+
+strong.contact-info-header {
+	font-size: 21px;
+	text-decoration: none;
+	line-height: 1.5em;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0;
+	// border-bottom: solid 1px $color-primary;
+	display: inline-block;
+	margin: 0.5rem 0 0.5rem;
 }
 
 form#contactform {
@@ -264,9 +273,6 @@ article.body.contact {
 	h3 {
 		margin: 30px 0 40px;
 	}
-	a.contact-link {
-		text-align: right;
-	}
 }
 
 .email-success-message {
@@ -323,15 +329,30 @@ article.body.contact {
 	img {
 		max-height: 100%;
 	}
+	.title-text {
+		position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(calc(-100% - 15px), 0);
+	}
   @media (max-width: 500px) {
 		position: static;
   	margin: auto;
+		.title-text {
+			position: static;
+			transform: none;
+			margin-top: 0.5rem;
+		}
   }
 }
 
 .contact-header {
 	position: relative;
-	padding-right: 220px;
+	padding-right: 290px;
 	min-height: 150px;
 	margin-bottom: 20px;
 	h1, h3 {
@@ -511,6 +532,10 @@ article.body.specialists {
 		float: left;
 		img {
 			border-radius: 4000px;
+			min-height: 176px;
+			@media (max-width: 450px) {
+				min-height: 120px;
+			}
 		}
 		@media (max-width: 800px) {
 			width: 30%;

@@ -24,13 +24,17 @@ const ContactPage = () => (
                 alt="Paul Tryon, Literary Tutoring Specialist"
                 title="Paul Tryon, Literary Tutoring Specialist"
               />
+              <div className="title-text">
+                <h5>Paul Tryon</h5>
+                <h6>Founder</h6>
+              </div>
             </div>
           </div>
-          <ContactForm />
-          <h3 className="locations">
-            <em dangerouslySetInnerHTML={{__html: JSONData.locations}} />
-          </h3>
         </div>
+        <ContactForm />
+        <h3 className="locations">
+          <em dangerouslySetInnerHTML={{__html: JSONData.locations}} />
+        </h3>
       </section>
     </Content>
     <Footer />

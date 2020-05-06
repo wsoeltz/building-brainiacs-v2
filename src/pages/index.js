@@ -98,6 +98,8 @@ const IndexPage = () => (
               alt="Paul Tryon"
               title="Paul Tryon, Literary Tutoring Specialist"
             />
+            <h5>Paul Tryon</h5>
+            <h6>Founder</h6>
           </div>
           <div className="form">
             <ContactForm />

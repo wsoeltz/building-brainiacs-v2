@@ -3,13 +3,26 @@
   "metaDescription": "Every child deserves the gift of reading. Our reading specialists turn the sentiment into a reality.",
 
   "title": "Contact Us",
-  "subtitle": "Schedule a free phone consultation with our founder, Paul Tryon.",
+  "subtitle": "Schedule a free phone consultation",
 
   "paragraph1": "We know that finding the right tutor for your child can be a daunting task. We are here to help.",
   "paragraph2": "Fill out the form or contact us directly.",
-  "paragraph3": "Paul Tryon will be in touch within 24 hours.",
+  "paragraph3": "We will be in touch within 24 hours.",
 
   "contactButton": "Get In Contact",
 
-  "locations": "Serving <strong>Boston, New York City, Westchester,</strong> and <strong>Long Island</strong>"
+  "locations": "Serving <strong>Boston, New York City, Westchester,</strong> and <strong>Long Island</strong>",
+
+  "data": [
+    {
+      "location": "For New York Inquiries",
+      "phone":"(917) 819-2468",
+      "email": "paul@buildingbrainiacs.com"
+    },
+    {
+      "location": "For Boston Inquiries",
+      "phone":"(617) 651-1429",
+      "email": "michelle@buildingbrainiacs.com"
+    }
+  ]
 }
