@@ -1,148 +1,162 @@
 {
-  "title": "specialists-data",
+  "metaTitle": "Specialists",
+  "metaDescription": "Every child deserves the gift of reading. Our reading specialists turn the sentiment into a reality.",
+
+  "title": "Our Specialists",
+  "subtitle": "We hire only the best and brightest, no exceptions.",
+  "description": "Our tutors are hand-picked to join our team of specialists. They are certified, experienced teachers and boast a proven track record for helping ​struggling readers and writers make accelerated progress.",
+
+  "founderName": "Paul Tryon",
+  "founderTitle": "Founder",
+  "founderSchool": "Graduate of NYU",
+
+  "founderLearnMoreLink": "Learn more about our founder, Paul Tryon.",
+
+  "founderLearnMore__HTML": "<p>Paul Tryon is the founder of Building Brainiacs and leads this NYC-based team of specialists.  As a New York State Certified Teacher and Certified Literacy Specialist, Paul has spent the last decade working as a reading interventionist and consulting in schools across NYC, Westchester and Long Island.</p><p>In addition to his work with Building Brainiacs, Paul is a School Director at Classical Charter Schools, a high performing network of schools in the South Bronx.  A recipient of the National Blue Ribbon Award, Classical's students consistently and drastically out-perform their peers in New York City and State. Paul joined Classical in 2014 as a literacy specialist, working with the school's most struggling readers to systematically close deficits. He built key components of the literacy curriculum, coached teachers of varying tenure, and led the network's team of literacy specialists. Paul was also the Director of the network's Summer Learning Academy.</p><p>Paul has worked as an adjunct professor at NYU where he designed and taught a class on Foundations of Literacy Development.  Prior to founding Building Brainiacs in 2011, Paul taught 3rd grade in Brooklyn and tutored extensively throughout New York City.</p><p>Paul earned his masters degree in Literacy Education from NYU and his bachelor's degree in Childhood Education from SUNY Potsdam, minoring in mathematics.</p>",
+
   "data": [
     {
       "name": "David D.",
       "type": "Math Specialist",
-      "school": "Hunter College​",
+      "school": "Graduate of Hunter College​",
       "image": "david-b.png"
     },
     {
       "name": "Bill K.",
       "type": "Literacy Specialist",
-      "school": "NYU",
+      "school": "Graduate of NYU",
       "image": "bill-k.png"
     },
     {
       "name": "Samantha M.",
       "type": "Literacy Specialist",
-      "school": "NYU",
+      "school": "Graduate of NYU",
       "image": "samantha-m.png"
     },
     {
       "name": "Katrina T.",
       "type": "Literacy Specialist",
-      "school": "NYU",
+      "school": "Graduate of NYU",
       "image": "katrina-t.png"
     },
     {
       "name": "Laura C.",
       "type": "Literacy and Math Specialist",
-      "school": "University of Alabama",
+      "school": "Graduate of University of Alabama",
       "image": "laura-c.png"
     },
     {
       "name": "Don L.",
       "type": "Writing Specialist",
-      "school": "Western Connecticut U.",
+      "school": "Graduate of Western Connecticut U.",
       "image": "don-l.png"
     },
     {
       "name": "Ivan R.",
       "type": "Writing Specialist",
-      "school": "NYU",
+      "school": "Graduate of NYU",
       "image": "ivan-r.png"
     },
     {
       "name": "Jenna E.",
       "type": "Literacy Specialist",
-      "school": "St. Joseph's",
+      "school": "Graduate of St. Joseph's",
       "image": "jenna-e.png"
     },
     {
       "name": "Alyssa N.",
       "type": "Literacy Specialist",
-      "school": "NYU",
+      "school": "Graduate of NYU",
       "image": "alyssa-n.png"
     },
     {
       "name": "Nandita B.",
       "type": "Literacy Specialist",
-      "school": "Williams College",
+      "school": "Graduate of Williams College",
       "image": "nandita-b.png"
     },
     {
       "name": "Sierra S.",
       "type": "Literacy Specialist",
-      "school": "Columbia University",
+      "school": "Graduate of Columbia University",
       "image": "sierra-s.png"
     },
     {
       "name": "Lizzie S.",
       "type": "Literacy Specialist",
-      "school": "Northeastern University",
+      "school": "Graduate of Northeastern University",
       "image": "lizzie-s.png"
     },
     {
       "name": "Alison K.",
       "type": "Literacy Specialist",
-      "school": "Bloomsburg University",
+      "school": "Graduate of Bloomsburg University",
       "image": "alison-k.png"
     },
     {
       "name": "Ashley H.",
       "type": "Literacy Specialist",
-      "school": "Columbia University",
+      "school": "Graduate of Columbia University",
       "image": "ashley-h.png"
     },
     {
       "name": "Anna D.",
       "type": "Literacy Specialist",
-      "school": "Hunter College",
+      "school": "Graduate of Hunter College",
       "image": "anna-d.png"
     },
     {
       "name": "Alison T.",
       "type": "Literacy Specialist",
-      "school": "Brooklyn College",
+      "school": "Graduate of Brooklyn College",
       "image": "alison-t.png"
     },
     {
       "name": "Paula S.",
       "type": "Literacy Specialist",
-      "school": "NYU",
+      "school": "Graduate of NYU",
       "image": "paula-s.png"
     },
     {
       "name": "Claire G.",
       "type": "Literacy Specialist",
-      "school": "Manhattan College",
+      "school": "Graduate of Manhattan College",
       "image": "claire-g.png"
     },
     {
       "name": "Evan O.",
       "type": "Literacy Specialist",
-      "school": "Louisiana State University",
+      "school": "Graduate of Louisiana State University",
       "image": "evan-o.png"
     },
     {
       "name": "Meghan M.",
       "type": "Literacy Specialist",
-      "school": "SUNY College of Old Westbury",
+      "school": "Graduate of SUNY College of Old Westbury",
       "image": "meghan-m.png"
     },
     {
       "name": "Louise D",
       "type": "Literacy Specialist",
-      "school": "Columbia University",
+      "school": "Graduate of Columbia University",
       "image": "louise-d.png"
     },
     {
       "name": "Kayleigh S",
       "type": "Literacy Specialist",
-      "school": "NYU",
+      "school": "Graduate of NYU",
       "image": "kayleigh-s.png"
     },
     {
       "name": "Michael M",
       "type": "Literacy Specialist",
-      "school": "Pace University",
+      "school": "Graduate of Pace University",
       "image": "michael-m.png"
     },
     {
       "name": "Julie B",
       "type": "Literacy Specialist",
-      "school": "George Washington University",
+      "school": "Graduate of George Washington University",
       "image": "julie-b.png"
     }
   ]

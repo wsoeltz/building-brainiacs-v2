@@ -4,53 +4,41 @@ import MetaData from "../components/metadata"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import { Link } from "gatsby"
+import JSONData from "../content/services.json";
 
 const ServicesPage = () => (
   <>
-    <MetaData title="Services" />
+    <MetaData title={JSONData.metaTitle}  description={JSONData.metaDescription} />
     <Header />
     <Content extraClass='services'>
       <section className="services-cover-photo">
         <div className="row">
-          <h1>Our Services</h1>
-          <h2>We systematically target the following areas according to each student's strengths and needs:</h2>
-          <ul>
-            <li>Phonological Awareness</li>
-            <li>Phonemic Awareness (phonics)</li>
-            <li>Fluency</li>
-            <li>Vocabulary</li>
-            <li>Comprehension</li>
-            <li>Automatic Sight Word Recognition​</li>
-            <li>Accuracy / Word-Attack Strategies</li>
-            <li>Self-Corrections</li>
-            <li>Monitoring for Meaning</li>
-            <li>Writing quality and output</li>
-          </ul>
+          <h1>{JSONData.title}</h1>
+          <h2>{JSONData.subtitle}</h2>
+          <ul>{JSONData.list.map(item => <li>{item}</li>)}</ul>
         </div>
       </section>
       <section className="services-content">
         <div className="row">
           <div className="card matchHeight">
-            <h3>Diagnostic Literacy Evaluations</h3>
-            <p>The diagnostic literacy evaluation is the cornerstone to our students' success. Using data gathered from diagnostic and norm-referenced assessments, we create a customized tutoring program tailored to the unique interests, strengths, and needs of your child.</p>
-            <p>We also offer a 15-20 page written report that provides an in-depth analysis of the test results, identifies percentiles, outlines instructional recommendations, and sets targeted goals. Parents use this report to communicate their child's precise needs to teachers and school officials, who might otherwise not know how to help. We are pretty sure you've never seen a report like this one.</p>
-            </div>
+            <h3>{JSONData.leftPanelTitle}</h3>
+            <div dangerouslySetInnerHTML={{__html: JSONData.leftPanelContent__HTML}} />
+          </div>
           <div className="card matchHeight">
-            <h3>Tutoring</h3>
-            <p>Unlike scripted programs and homework help centers, our specialists systematically address underlying deficits through a multi-sensory, targeted approach to literacy instruction. Instead of subscribing to any one program, we build instruction from the ground up to reflect the unique needs of each child.</p>
-            <p>Our literacy tutoring services are offered to students of all ages. We specialize in helping struggling readers, particularly those with dyslexia, fill the gaps and become proficient readers.</p>
+            <h3>{JSONData.rightPanelTitle}</h3>
+            <div dangerouslySetInnerHTML={{__html: JSONData.rightPanelContent__HTML}} />
           </div>
         </div>
       </section>
       <section className="services-rates">
         <div className="row">
-          <h3>Our Rates</h3>
-          <p>Our hourly rates are based on factors that vary from family to family.  We are happy to provide you with a quote after learning about your child and what you're looking for.  We offer personalized payment plans to ensure finances don't interfere with your child's education.</p>
+          <h3>{JSONData.rateTitle}</h3>
+          <p>{JSONData.rateDesc}</p>
           <div className="learning-icon"><i className="fa fa-book" aria-hidden="true" alt="Book"></i></div>
         </div>
         <div className="row">
-          <h3>Learn More About Our Services</h3>
-          <Link to="/contact" className="btn">Set up a free consultation with our founder</Link>
+          <h3>{JSONData.ctaTitle}</h3>
+          <Link to="/contact" className="btn">{JSONData.ctaButton}</Link>
         </div>
       </section>
     </Content>

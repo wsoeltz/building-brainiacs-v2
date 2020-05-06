@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import JSONData from "../content/contact.json";
 
 const ContactForm = () => {
   const [mousetrapValue, setMousetrapValue] = useState('');
@@ -55,7 +56,7 @@ const ContactForm = () => {
           <div className="column half">
             <label htmlFor="comments">Message</label>
             <textarea  name="comments" id="comments" required></textarea>
-            <input className="btn" type="submit" value="Get In Contact" />
+            <input className="btn" type="submit" value={JSONData.contactButton} />
           </div>
         </div>
         <div className="listErrors"></div>

@@ -23,7 +23,7 @@ const TestimonialBlock = ({snippet, name, status, htmlContent, fullColumn}) => {
         className="btn testimonialLink"
         onClick={() => setIsModalOpen(true)}
       >
-        Read Full Testimonial
+        {JSONData.openTestimonialButton}
       </button>
       <div className="testimonialModal">
         <div className="testimonialFull" dangerouslySetInnerHTML={{__html: htmlContent}} />
@@ -32,7 +32,7 @@ const TestimonialBlock = ({snippet, name, status, htmlContent, fullColumn}) => {
           className="btn closeModal"
           onClick={() => setIsModalOpen(false)}
         >
-          Done
+          {JSONData.closeTestimonialButton}
         </button>
       </div>
     </div>
@@ -59,13 +59,13 @@ const TestimonialPage = () => {
   }
   return (
     <>
-      <MetaData title="Testimonials" />
+      <MetaData title={JSONData.metaTitle}  description={JSONData.metaDescription} />
       <Header />
       <Content extraClass='testimonials'>
         <section className="testimonials-header">
           <div className="row">
-            <h1>Testimonials</h1>
-            <h2>See what everyone’s been saying about&nbsp;us.</h2>
+            <h1>{JSONData.title}</h1>
+            <h2>{JSONData.subtitle}</h2>
             <div className="learning-icon">
               <i className="fa fa-star" aria-hidden="true"></i>
               <i className="fa fa-star" aria-hidden="true"></i>
@@ -78,7 +78,7 @@ const TestimonialPage = () => {
         <section className="testimonials-content">
           {testimonials}
           <div className="row">
-            <Link to="/contact" className="btn testimonialCta">Schedule a Free Consultation</Link>
+            <Link to="/contact" className="btn testimonialCta">{JSONData.cta}</Link>
           </div>
         </section>
       </Content>

@@ -31,6 +31,8 @@ import "../font-awesome-4.6.3/css/font-awesome.min.css"
 function SEO({ description, title }) {
   const metaTitle = title && !title.toLowerCase().includes('building brainiacs')
     ? title + ' | Building Brainiacs' : 'Building Brainiacs';
+  const metaDescription = description && description.length
+    ? description : 'Every child deserves the gift of reading. Our reading specialists turn the sentiment into a reality.';
   return (
     <Helmet>
       <meta charset="utf-8" />
@@ -56,7 +58,7 @@ function SEO({ description, title }) {
 
       <link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700' rel='stylesheet' type='text/css' />
       <title>{metaTitle}</title>
-      <meta name="description" content={description} />
+      <meta name="description" content={metaDescription} />
 
     </Helmet>
   )

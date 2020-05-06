@@ -4,18 +4,19 @@ import MetaData from "../components/metadata"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import ContactForm from '../components/contactForm';
+import JSONData from "../content/contact.json";
 
 const ContactPage = () => (
   <>
-    <MetaData title="Contact Us" />
+    <MetaData title={JSONData.metaTitle}  description={JSONData.metaDescription} />
     <Header />
     <Content extraClass='contact'>
       <section>
         <div className="row">
           <div className="contact-header">
             <div className="header-text">
-              <h1>Contact Us</h1>
-              <h3>Schedule a free phone consultation with our founder, Paul&nbsp;Tryon.</h3>
+              <h1>{JSONData.title}</h1>
+              <h3>{JSONData.subtitle}</h3>
             </div>
             <div className="paul-photo-small">
               <img
@@ -27,7 +28,7 @@ const ContactPage = () => (
           </div>
           <ContactForm />
           <h3 className="locations">
-            <em>Serving <strong>Boston</strong>, <strong>New&nbsp;York&nbsp;City</strong>, <strong>Westchester</strong>, and <strong>Long&nbsp;Island</strong></em>
+            <em dangerouslySetInnerHTML={{__html: JSONData.locations}} />
           </h3>
         </div>
       </section>
