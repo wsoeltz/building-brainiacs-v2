@@ -6,14 +6,34 @@ import Footer from "../components/footer"
 import JSONData from "../content/specialists.json";
 
 const SpecialistsPage = () => {
-  const {data} = JSONData;
-  const specialists = data.map(({name, type, school, image}) => {
+  const specialists = JSONData.specialists.map(({name, type, school, image}) => {
     return (
       <div className="specialist-avatar matchHeight" key={name + type + school + image}>
         <img src={require(`../images/specialists/${image}`)} alt={name} />
         <h5>{name}</h5>
         <h6>{type}</h6>
         <h6 className="university">{school}</h6>
+      </div>
+    );
+  });
+  const managers = JSONData.managers.map(({name, title, school, image, htmlContent}) => {
+    return (
+      <div className="manager-row">
+        <div className="image image-small">
+          <img
+            src={require(`../images/managers/${image}`)}
+            alt={name}
+            title={name}
+          />
+          <div className="text">
+            <h5>{name}</h5>
+            <h6>{title}</h6>
+            <h6>{school}</h6>
+          </div>
+        </div>
+        <div className="content"
+          dangerouslySetInnerHTML={{__html: htmlContent}}
+        />
       </div>
     );
   });
@@ -36,23 +56,7 @@ const SpecialistsPage = () => {
         </section>
         <section className="specialists-managers">
           <h1>Leadership</h1>
-          <div className="manager-row">
-            <div className="image image-small">
-              <img
-                src={require("../images/managers/michelle-russo.jpg")}
-                alt={JSONData.managers[0].name}
-                title={JSONData.managers[0].name}
-              />
-              <div className="text">
-                <h5>{JSONData.managers[0].name}</h5>
-                <h6>{JSONData.managers[0].title}</h6>
-                <h6>{JSONData.managers[0].school}</h6>
-              </div>
-            </div>
-            <div className="content"
-              dangerouslySetInnerHTML={{__html: JSONData.managers[0].htmlContent}}
-            />
-          </div>
+          {managers}
         </section>
         <section className="specialists-managers founder">
           <div className="manager-row">

@@ -14,7 +14,7 @@ The code for this site is licensed under [Attribution-NonCommercial-ShareAlike 4
   - [Editing a JSON File](#editingajsonfile)
   - [metaTitle and metaDescription](#metadata)
   - [HTML in the JSON](#htmlinjson)
-  - [Updating Specialists](#updatingspecialists)
+  - [Updating Specialists and Managers](#updatingspecialists)
   - [Updating Testimonials](#updatingtestimonials)
 
 <a name="overview"/>
@@ -94,17 +94,17 @@ For the purpose of this site, the only tags you may need are the following:
 
 <a name="updatingspecialists"/>
 
-## **Updating Specialists**
+## **Updating Specialists and Managers**
 
 The first step to adding a specialist is to add their picture. The pictures for all of the specialists should go in [`src/images/specialists/`](src/images/specialists). From there, in the top right just above the list of files, you'll see a button that says "Upload files". Click this and you can upload an image to the directory.
 
 The image must be a square **240 pixels by 240 pixels**. If you don't have any software to perform the crop, there are number of online free image croppers that can be found with a quick Google Search. The image does not have to be a circle, so long as it is a square the code will automatically put it into a circle.
 
-Once the image is updated, navigate to [`src/content/specialists.json`](src/content/specialists.json) and hit *edit*. In this JSON file, you will find a `key` called `data`. Unlike the other JSON values already talked about, `data` is a list of JSON values and it looks like this:
+Once the image is updated, navigate to [`src/content/specialists.json`](src/content/specialists.json) and hit *edit*. In this JSON file, you will find a `key` called `specialists`. Unlike the other JSON values already talked about, `specialists` is a list of JSON values and it looks like this:
 
 ```js
 {
-  data: [
+  specialists: [
     {
       "name": "David D.",
       "type": "Math Specialist",
@@ -131,19 +131,27 @@ To add a new specialist, create a new grouping after the last one in the list, m
 
 You can also reorder and delete specialists, just make sure to follow the formatting guidelines.
 
+**Managers**
+
+For adding managers, you follow the same idea but with the `key` called `managers` that appears after all of the specialists data.
+
+Just like with specialists, the first step to adding a manager is to add their picture. The pictures for all of the managers should go in [`src/images/managers/`](src/images/managers). From there, in the top right just above the list of files, you'll see a button that says "Upload files". Click this and you can upload an image to the directory.
+
+The managers also include a field called `htmlContent` which is where you can add the description for the manager. This will render as HTML and at a minimum must include a paragraph - `<p>Some text here</p>`. Refer to [HTML in the JSON](#htmlinjson) for more information.
+
 <a name="updatingtestimonials"/>
 
 ## **Updating Testimonials**
 
 Updating testimonials follows a similar approach as [Updating Specialists](#updatingspecialists). Navigate to [`src/content/testimonials.json`](src/content/testimonials.json) to edit the testimonials content file.
 
-From there, you will see a similar structure of the key "data" relating to a list of values. As you add/edit/remove testimonials, make sure to follow the guidelines in [Editing a JSON File](#editingajsonfile) and the additional guidelines mentioned in [Updating Specialists](#updatingspecialists).
+From there, you will see a similar structure of the key "testimonials" relating to a list of values. As you add/edit/remove testimonials, make sure to follow the guidelines in [Editing a JSON File](#editingajsonfile) and the additional guidelines mentioned in [Updating Specialists](#updatingspecialists).
 
 There are a couple of unique fields in the testimonials document. The general structure looks like this:
 
 ```js
 {
-  data: [
+  testimonials: [
     {
       "snippet": "We will...",
       "name": "Wendy",
