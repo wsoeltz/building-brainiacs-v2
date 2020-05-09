@@ -352,15 +352,7 @@ article.body.contact {
 
 .contact-header {
 	position: relative;
-	padding-right: 290px;
-	min-height: 150px;
 	margin-bottom: 20px;
-	h1, h3 {
-		text-align: left;
-	}
-  @media (max-width: 500px) {
-  	padding-right: 0;
-  }
 }
 
 form#contactform input.mousetrap {
