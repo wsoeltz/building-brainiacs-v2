@@ -139,6 +139,10 @@ Just like with specialists, the first step to adding a manager is to add their p
 
 The managers also include a field called `htmlContent` which is where you can add the description for the manager. This will render as HTML and at a minimum must include a paragraph - `<p>Some text here</p>`. Refer to [HTML in the JSON](#htmlinjson) for more information.
 
+**Add Managers Contact Information**
+
+In addition to adding Manager profiles to the Specialists page, you can also add their contact information to both the Landing page and the Contact Us page. In the file [`src/content/contact.json`](src/content/contact.json), you will find another list called `contactInfo` where it can be added to in the same vein as the above lists. Updates to this list will show up on both the Landing page and the Contact Us page.
+
 <a name="updatingtestimonials"/>
 
 ## **Updating Testimonials**

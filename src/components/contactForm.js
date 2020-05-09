@@ -7,7 +7,7 @@ const ContactForm = () => {
     return null;
   }
 
-  const contactSections = JSONData.data.map(({location, phone, email}) => (
+  const contactSections = JSONData.contactInfo.map(({location, phone, email}) => (
     <React.Fragment key={location + email + phone}>
       <p>
         <strong className="contact-info-header">{location}</strong>
