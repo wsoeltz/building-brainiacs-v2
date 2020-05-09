@@ -40,12 +40,11 @@ const TestimonialBlock = ({snippet, name, status, htmlContent, fullColumn}) => {
 }
 
 const TestimonialPage = () => {
-  const {data} = JSONData;
   const testimonials = [];
-  for (let i = 0; i < data.length; i += 2) {
-    const datum = data[i];
-    const secondItem = datum.fullColumn === false && data[i + 1] !== undefined ? (
-      <TestimonialBlock {...data[i + 1]} />
+  for (let i = 0; i < JSONData.testimonials.length; i += 2) {
+    const datum = JSONData.testimonials[i];
+    const secondItem = datum.fullColumn === false && JSONData.testimonials[i + 1] !== undefined ? (
+      <TestimonialBlock {...JSONData.testimonials[i + 1]} />
     ) : null;
     testimonials.push(
       <div className="row" key={datum.snippet + i}>
