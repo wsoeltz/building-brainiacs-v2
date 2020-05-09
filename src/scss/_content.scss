@@ -429,18 +429,12 @@ article.body.services {
 		    -webkit-flex-wrap: wrap;
 		    -ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
+		    justify-content: space-between;
 		}
 		.card {
 			width: 47%;
-			float: left;
-			&:first-child {
-				margin-right: 6%;
-			}
 			@media (max-width: 1150px) {
 				width: 49%;
-				&:first-child {
-					margin-right: 2%;
-				}
 			}
 			@media (max-width: 950px) {
 				width: 100%;

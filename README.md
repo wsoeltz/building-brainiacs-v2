@@ -25,6 +25,8 @@ All of the _text content_ for the site can be found in [`src/content`](src/conte
 
 The text is stored in **JSON** format, which is a fast and simple data format that makes developing the site easy and updating the content straightforward once you understand the basics of how to format a JSON file.
 
+Whenever a change is made to any file, or a new file is uploaded, a "build" will be triggered. Once a build is successful, the changes made will be visible on the live site. If changes were made that would break the site, the build will fail and the website will remain as it did from the last successful change. To view the progress of the latest build, go here - https://travis-ci.org/github/wsoeltz/building-brainiacs-v2 
+
 <a name="editingajsonfile"/>
 
 ## Editing a JSON File

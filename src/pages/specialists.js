@@ -35,7 +35,7 @@ const SpecialistsPage = () => {
           </div>
         </section>
         <section className="specialists-managers">
-          <h1>Leadership &amp; Managment</h1>
+          <h1>Leadership</h1>
           <div className="manager-row">
             <div className="image image-small">
               <img
@@ -64,7 +64,8 @@ const SpecialistsPage = () => {
               />
               <div className="text">
                 <h5>{JSONData.founderName}</h5>
-                <h6>{JSONData.founderTitle}</h6>
+                <h6>{JSONData.founderTitle1}</h6>
+                <h6>{JSONData.founderTitle2}</h6>
                 <h6>{JSONData.founderSchool}</h6>
               </div>
             </div>
